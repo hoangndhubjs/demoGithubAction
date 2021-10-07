@@ -1,0 +1,42 @@
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+package-lock.json
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+public/uploads
+# Laravel 5 & Lumen specific with changed public path
+public_html/storage
+public_html/hot
+
+storage/*.key
+storage/framework/laravel-excel
+stubs/
+
+# Framework ignore
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+public/css
+public/js
+public/fullcalendar_v1
+public/plugins
+public/mix-manifest.json
+composer.lock
+
+# IDE
+.idea
+*.lock
+
+
+storage/config

@@ -1,0 +1,338 @@
+//
+// Main Style
+//
+
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 1: Initialize
+@import "init";
+
+// 2: Bootstrap framework includes
+@import "~bootstrap/scss/bootstrap";
+
+// 3: Components
+@import
+    "components/utilities",
+    "components/burger-icon",
+    "components/card",
+    "components/wizard",
+    "components/type",
+    "components/breadcrumb",
+    "components/nav",
+    "components/alert",
+    "components/buttons",
+    "components/code",
+    "components/dropdown",
+    "components/forms",
+    "components/grid",
+    "components/modal",
+    "components/progress",
+    "components/table",
+    "components/popover",
+    "components/tooltip",
+    "components/accordion",
+    "components/datatable",
+    "components/checkbox",
+    "components/radio",
+    "components/switch",
+    "components/option",
+    "components/dialog",
+    "components/strikethrough",
+    "components/separator",
+    "components/image-input",
+    "components/label",
+    "components/loader",
+    "components/symbol",
+    "components/pulse",
+    "components/page-loader",
+    "components/quick-search",
+    "components/scrolltop",
+    "components/spinner",
+    "components/sticky-toolbar",
+    "components/svg-icon",
+    "components/svg",
+    "components/timeline",
+    "components/timeline-2",
+    "components/timeline-3",
+    "components/timeline-4",
+    "components/timeline-5",
+    "components/timeline-6",
+    "components/overlay",
+    "components/wave",
+    "components/list",
+    "components/bullet",
+    "components/navi",
+    "components/ribbon",
+    "components/toggle";
+
+// 4: Plugins
+@import
+    "vendors/plugins/formvalidation",
+    "vendors/plugins/blockui",
+    "vendors/plugins/bootstrap-datepicker",
+    "vendors/plugins/bootstrap-daterangepicker",
+    "vendors/plugins/tempusdominus-bootstrap-4",
+    //"vendors/plugins/bootstrap-markdown",
+    "vendors/plugins/bootstrap-maxlength",
+    "vendors/plugins/bootstrap-notify",
+    "vendors/plugins/bootstrap-select",
+    //"vendors/plugins/bootstrap-session-timeout",
+    "vendors/plugins/bootstrap-switch",
+    "vendors/plugins/bootstrap-timepicker",
+    "vendors/plugins/bootstrap-touchspin",
+    //"vendors/plugins/ckeditor",
+    "vendors/plugins/datatables",
+    "vendors/plugins/dropzone",
+    //"vendors/plugins/duallistbox",
+    "vendors/plugins/fontawesome5",
+    "vendors/plugins/fullcalendar",
+    //"vendors/plugins/gmaps",
+    //"vendors/plugins/ion-range-slider",
+    //"vendors/plugins/jquery-repeater",
+    //"vendors/plugins/jqvmap",
+    //"vendors/plugins/jstree",
+    //"vendors/plugins/kanban",
+    //"vendors/plugins/nouislider",
+    "vendors/plugins/perfect-scrollbar",
+    //"vendors/plugins/quill",
+    //"vendors/plugins/recaptcha",
+    "vendors/plugins/select2",
+    //"vendors/plugins/summernote",
+    "vendors/plugins/sweetalert2",
+    //"vendors/plugins/tagify",
+    //"vendors/plugins/tinymce",
+    "vendors/plugins/toastr",
+    //"vendors/plugins/typeahead",
+    //"vendors/plugins/uppy",
+    "vendors/plugins/draggable";
+    //"vendors/plugins/prismjs",
+    //"vendors/plugins/apexcharts",
+    //"vendors/plugins/leaflet";
+
+
+// 5: Layout
+@import "layout/init";
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY ABOVE INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+.header-logo img,
+.brand-logo img,
+.mobile-logo img {
+    height: 35px;
+}
+.select2 {
+    width: 100%;
+}
+.loading-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: rgba(0,0,0,0.1);
+}
+#attendance_month_calendar {
+    position: relative;
+
+    & *,
+    & .fc-view-container ::before,
+    & .fc-view-container ::after {
+        box-sizing: inherit;
+    }
+
+    & .fc-day-header > span {
+        color: #3F4254;
+    }
+
+    & .fc-attendance-event {
+        background-color: transparent !important;
+        opacity: 1 !important;
+        vertical-align: middle !important;
+        position: relative;
+        cursor: pointer;
+    }
+
+    & .fc-attendance-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        word-break: break-word;
+    }
+
+    & .fc-today {
+        position: relative;
+    }
+
+    & .fc-attendance-event .fc-day-number,
+    & .fc-today .fc-day-number {
+        z-index: 12;
+        top: 0;
+        right: 0;
+        position: absolute;
+        padding: 0.5rem;
+    }
+
+    & .fc-row .fc-bg {
+        z-index: 10;
+    }
+
+    .fc-attendance-detail {
+        position: fixed;
+        z-index: 11;
+        background: #fff;
+        padding: 20px;
+        border-radius: 7px;
+        width: 320px;
+    }
+
+    .fc-attendance-detail td,
+    .fc-attendance-detail th {
+        border: none;
+    }
+
+    .fc-attendance-detail th {
+        font-size: 1.4rem;
+        padding-bottom: 1rem;
+        color: #656565;
+    }
+
+    .fc-attendance-detail td {
+        font-size: 1.1rem;
+        color: #979797;
+    }
+}
+
+.attendance-full {
+    background-color: #E1F0FF;
+    color: #1689FF;
+}
+.attendance-half {
+    background-color: #E5FFD9;
+    color: #0EB10A;
+}
+.attendance-holiday {
+    background-color: #C9F7F5;
+    color: #4BC8C3;
+}
+.attendance-leave-requested {
+    background-color: #FFF4DE;
+    color: #FFB55A;
+}
+.attendance-leave {
+    background-color: #FFE2E5;
+    color: #EC0000;
+}
+.attendance-sunday {
+    background-color: #EEE5FF;
+    color: #9662FF;
+}
+.attendance-go-on {
+    background-color: #FEE7DD;
+    color: #EF6327;
+}
+
+.attendance-online {
+    background-color: #F4E1EF;
+    color: #c64aa8;
+}
+
+.fc-event-label {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.mw-popup {
+    max-width: 700px;
+}
+
+.scroll-calendar {
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 140px;
+}
+
+#attendance_monthly_summary {
+    & .text-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    & .text-summary > span{
+        color: #B5B5C3;
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    & .text-summary .text-number {
+        font-weight: 900;
+        font-size: 1.5rem;
+        color: #464E5F;
+    }
+}
+.color-profile-text{
+    color: #3A528F;
+}
+.col-mobile-company img {
+    width: 80%;
+}
+
+//image preview
+.image-config {
+    position: relative;
+    max-width: 150px;
+    margin: 10px auto;
+}
+.image-config .image-edit {
+    position: absolute;
+    right: 28px;
+    z-index: 1;
+    top: 8px;
+}
+.image-config .image-edit input {
+    display: none;
+}
+.image-config .image-edit input + label {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+}
+.image-config .image-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+
+.image-config .image-preview {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    border-radius: 8%;
+    border: 6px solid #d0d0d0;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.image-config .image-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iconEdit {
+    margin-left: 1px;
+}
+//image preview

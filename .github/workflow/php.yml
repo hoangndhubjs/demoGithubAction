@@ -1,5 +1,0 @@
-on: push
-name: Build and Release
-jobs:
-  build_and_release:
-  name: Build and release

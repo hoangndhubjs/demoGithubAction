@@ -1,0 +1,1 @@
+@if ($type === 'svg') {{ $content }} @else <i class="{{ $content }}"></i> @endif

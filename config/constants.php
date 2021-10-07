@@ -1,0 +1,66 @@
+<?php
+return [
+        'ALLOW_CHECK_IN_LATE_MINUTES' => 60,
+        'ALLOW_CHECK_OUT_EARLY_MINUTES' => 60,
+        'BEGINNING_OF_AFTERNOON' => '13:30',
+        'ENDING_OF_MORNING' => '12:00',
+        'IGNORE_BLD_IDS' => [],
+        'BOD_USER_IDS' => '6, 9, 13, 101, 145, 167, 179',
+        'MINIMUM_MEAL_ORDER_PRICE' => 25000,
+        'MINIMUM_PRIMARY_MEAL_CAN_SELECT' => 2,
+        'OVER_PRICE_WHEN_SELECT_OVER_BARRIER' => 10000,
+        'MAXIMUM_LATE_TIME_ALLOWED' => 300,
+        'folders' => [
+            'hq_software'  => 'HQ - Software',
+            'hq_idol'  => 'HQ - Idol',
+            'hq_fanpage'  => 'HQ - Fanpage',
+            'hq_agency'  => 'HQ - Agency',
+            'hq_community'  => 'HQ - Community',
+            'hq_esport'  => 'HQ - Esports',
+            'hq_design'  => 'HQ - Design',
+            'hq_doituyen'  => 'HQ - Đội Tuyển',
+            'hq_news'  => 'HQ - News',
+            'hq_quanplay'  => 'HQ - Quanplay',
+            'hq_manager'  => 'HQ - Manager'
+        ],
+        'mapping_folders' => [
+            'hq_software'   => 6,
+            'hq_idol'       => 7,
+            'hq_fanpage'    => 8,
+            'hq_agency'     => 9,
+            'hq_community'  => 10,
+            'hq_esport'     => 11,
+            'hq_design'     => 13,
+            'hq_doituyen'   => 16,
+            'hq_news'       => 17,
+            'hq_quanplay'   => 18,
+            'hq_manager'    => 19
+        ],
+        'valid_mime' => [
+            'image/jpeg',
+            'image/pjpeg',
+            'image/png',
+            'image/gif',
+            'image/svg+xml',
+            'application/pdf',
+            'text/plain',
+            '.doc',
+            '.docx',
+            '.xls',
+            '.xlsx',
+            '.ppt',
+            '.pptx'
+        ],
+        'SALARY_REDUCE_PERSONAL' => 11000000,
+        'SALARY_REDUCE_DEPENDENT' =>4400000,
+        'RULE_INCOME_TAX' => serialize (array(
+            1 => array('max'=>5000000, 'percent'=>5, 'subtraction'=>0),
+            2 => array('max'=>10000000, 'percent'=>10, 'subtraction'=>250000),
+            3 => array('max'=>18000000, 'percent'=>15, 'subtraction'=>750000),
+            4 => array('max'=>32000000, 'percent'=>20, 'subtraction'=>1650000),
+            5 => array('max'=>52000000, 'percent'=>25, 'subtraction'=>3250000),
+            6 => array('max'=>80000000, 'percent'=>30, 'subtraction'=>5850000),
+            7 => array('max'=>500000000, 'percent'=>35, 'subtraction'=>9850000),
+        ))
+    ];
+?>
